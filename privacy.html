@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — PMCH Google Docs review</title>
+<style>body{max-width:46rem;margin:4rem auto;padding:0 1.5rem;font:18px/1.6 system-ui,sans-serif;color:#222}h1{line-height:1.2}a{color:#1557a0}</style>
+</head>
+<body>
+<h1>Privacy information</h1>
+<p>PMCH Google Docs review is a personal manuscript-review tool maintained by Peter Harrison. This page describes the configured workflow as of 6 October 2026.</p>
+<h2>Information accessed and its purpose</h2>
+<p>The tool reads the authenticated Google account's email address and display name to verify the reviewer identity. For documents Peter requests, it reads document text, formatting, tabs, comments, suggestions and revision information. When authorized by Peter, it submits suggested edits and anchored comments to the original Google Doc.</p>
+<p>The Google Docs permission allows access to Google Docs available to the review account, including documents shared with it. A separate per-file Google Drive permission supports account verification. The tool does not automatically read every accessible document.</p>
+<h2>Processing and storage</h2>
+<p>OAuth credentials are stored in local files outside the source repository with owner-only file permissions. Document snapshots, proposed changes and submission receipts can contain manuscript content and are stored locally in directories excluded from Git. Local copies remain until deleted by the operator.</p>
+<p>Content read or reviewed through Codex is also processed by OpenAI under the applicable account settings and service terms. Google processes API requests and stores any suggestions and comments in the source document. This local tool does not sell Google user data, use it for advertising, or train machine-learning models.</p>
+<h2>Control and removal</h2>
+<p>Document owners can remove the review account's sharing permission. The account holder can revoke the application's OAuth authorization in Google Account settings. Revocation stops future API access; it does not automatically delete previously saved local copies, conversation content, or comments and suggestions already submitted to Google Docs.</p>
+<p>For questions or requests concerning locally stored review material, contact <a href="mailto:pmcharrisonbot@gmail.com">pmcharrisonbot@gmail.com</a>.</p>
+<p><a href="index.html">About the application</a></p>
+</body>
+</html>
